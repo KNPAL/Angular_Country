@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row m-0">
+        <div class="col-md-8">
+            <app-table></app-table>
+        </div>
+        <div class="col-md-4">
+            <ng-container *ngIf="showAnimationTab">
+                <app-detail></app-detail>
+            </ng-container>
+        </div>
+    </div>
+</div>
+<app-pop-up></app-pop-up>

@@ -1,0 +1,18 @@
+<!-- modal.component.html -->
+<div class="modal" tabindex="-1" role="dialog" [ngClass]="{ 'show': showModal }">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">{{Country.name.common}}</h3>
+        <button type="button" class="close" (click)="closeModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-thumbnail my-3" [src]="Country.flags.png" />
+        <h5>Capital</h5> <p>{{Country.capital}}</p> 
+        <h5>Language</h5> <p>{{Country.languages|language}}</p> 
+      </div>
+    </div>
+  </div>
+</div>

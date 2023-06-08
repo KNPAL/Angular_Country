@@ -1,0 +1,12 @@
+<div [@fadeInOut]>
+    <h3 class="modal-title">{{Country.name.common}}</h3>
+    <img class="img-thumbnail my-3" [src]="Country.flags.png" />
+</div>
+<div [@slideInAnimation]>
+    <h5>Capital</h5>
+    <p>{{Country.capital}}</p>
+</div>
+<div style="padding-top: 60px;">
+    <h5>Language</h5>
+    <p>{{Country.languages|language}}</p>
+</div>
